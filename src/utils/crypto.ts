@@ -9,5 +9,3 @@ export function encrypt(text: string): string {
 export function decrypt(text: string): string {
   return CryptoJS.AES.decrypt(text, SECRET_KEY).toString(CryptoJS.enc.Utf8);
 }
-
-console.log(decrypt(encrypt('ololololo')));
